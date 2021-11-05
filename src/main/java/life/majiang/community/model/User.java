@@ -2,7 +2,7 @@ package life.majiang.community.model;
 
 public class User {
     private Integer id;
-    private String login;
+    private String name;
     private String accountId;
     private String token;
     private Long GmtCreate;
@@ -16,12 +16,12 @@ public class User {
         this.id = id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getName() {
+        return name;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAccountId() {
