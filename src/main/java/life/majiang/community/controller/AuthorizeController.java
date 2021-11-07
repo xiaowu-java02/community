@@ -22,11 +22,11 @@ public class AuthorizeController {
     @Autowired
     private GithubProvider githubProvider;
 
-    @Value("${github.client.id}")
+    @Value("c0cb44251cf59371b35c")
     private String clientId;
-    @Value("${github.client.secret}")
+    @Value("13fcbda8bd5faf579cc304d681e2cadf5cd83c1f")
     private String clientSecret;
-    @Value("${github.redirect.uri}")
+    @Value("http://localhost:8887/callback")
     private String redirectUri;
 
     @Autowired
@@ -45,7 +45,7 @@ public class AuthorizeController {
         accessTokenDTO.setState(state);
         String accessToken = githubProvider.getAccessToken(accessTokenDTO);
         GithubUser githubUser = GithubProvider.getUser(accessToken);
-        if (githubUser != null){
+        if (githubUser != null && githubUser.getId() == null){
             User user = new User();
             String token = UUID.randomUUID().toString();
             user.setToken(token);
@@ -53,6 +53,7 @@ public class AuthorizeController {
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            user.setAvatarUrl(user.getAvatarUrl());
             userMapper.insert(user);
             response.addCookie(new Cookie("token",token));
             return "redirect:/";
