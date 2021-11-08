@@ -1,10 +1,12 @@
 package life.majiang.community.controller;
 
 import com.sun.org.apache.bcel.internal.generic.BREAKPOINT;
+import life.majiang.community.dto.QuestionDTO;
 import life.majiang.community.mapper.QuestionMapper;
 import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.Question;
 import life.majiang.community.model.User;
+import life.majiang.community.service.QusertionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,7 +24,7 @@ public class IndexController {
     private UserMapper userMapper;
 
     @Autowired
-    private QuestionMapper questionMapper;
+    private QusertionService qusertionService;
 
     @GetMapping("/")
     public String index(HttpServletRequest request,
@@ -41,7 +43,7 @@ public class IndexController {
             }
         }
 
-        List<Question> questionsList = questionMapper.list();
+        List<QuestionDTO> questionsList = qusertionService.list();
         model.addAttribute("question",questionsList);
         return "index";
     }

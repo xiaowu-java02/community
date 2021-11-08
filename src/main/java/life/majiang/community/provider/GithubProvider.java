@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import life.majiang.community.dto.AccessTokenDTO;
 import life.majiang.community.dto.GithubUser;
 import okhttp3.*;
+import org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -38,8 +39,7 @@ public class GithubProvider {
             String string = response.body().string();
             GithubUser githubUser = JSON.parseObject(string, GithubUser.class);
             return githubUser;
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException e) {
         }
         return null;
     }

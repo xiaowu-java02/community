@@ -1,6 +1,7 @@
 package life.majiang.community.mapper;
 
 import life.majiang.community.model.Question;
+import life.majiang.community.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -15,4 +16,5 @@ public interface QuestionMapper {
 
     @Select("select * from question")
     List<Question> list();
+
 }
