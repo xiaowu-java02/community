@@ -14,7 +14,7 @@
 <div class="container-fluid main profile">
     <div class="row">
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-            <h2><span th:text="sectionName"></span></h2>
+            <h2><span th:text="${sectionName}"></span></h2>
             <hr>
 
             <div class="media" th:each="question : ${pagination.questions}">
@@ -26,9 +26,12 @@
                 <div class="media-body">
                     <h4 class="media-heading" th:text="${question.title}"></h4>
                     <span th:text="${question.description}"></span>
-                    <span class="text-desc"><span th:text="${question.commentCount}"></span>个回复 <span
-                            th:text="${question.viewCount}"></span>次浏览 <span
-                            th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span></span>
+                    <br>
+                    <span class="text-desc">
+                        <span th:text="${question.commentCount}"></span> 个回复 |
+                        <span th:text="${question.viewCount}"></span> 次浏览 |
+                        发布时间 <span th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span>
+                    </span>
                 </div>
             </div>
             <nav aria-label="Page navigation">
@@ -61,8 +64,10 @@
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <div class="list-group section">
-                <a href="/profile/questions" th:class="${section == 'questions'}?'active list-group-item':'list-group-item'">我提出的问题</a>
-                <a href="/profile/replies" th:class="${section == 'replies'}?'active list-group-item':'list-group-item'">
+                <a href="/profile/questions" th:class="${section == 'questions'} ? 'active list-group-item' : 'list-group-item'">
+                    我提出的问题
+                </a>
+                <a href="/profile/replies" th:class="${section == 'replies'} ? 'active list-group-item' : 'list-group-item'">
                     最新回复
                     <span class="badge">14</span>
                 </a>
