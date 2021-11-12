@@ -30,6 +30,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
+
         <!--mybatis-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -41,6 +42,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <!--okhttp-->
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
@@ -55,6 +57,7 @@
             <version>1.2.78</version>
         </dependency>
 
+        <!--h2-->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -67,6 +70,7 @@
             <version>4.0.1</version>
         </dependency>
 
+        <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -78,6 +82,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.4.0</version>
         </dependency>
 
     </dependencies>
@@ -95,6 +104,18 @@
                 <configuration>
                     <url>jdbc:h2:~/community</url>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.h2database</groupId>
+                        <artifactId>h2</artifactId>
+                        <version>1.4.200</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.4.0</version>
                 <dependencies>
                     <dependency>
                         <groupId>com.h2database</groupId>
