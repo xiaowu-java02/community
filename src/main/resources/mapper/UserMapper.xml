@@ -110,6 +110,17 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
+
+  </select>
+
+  <select id="selectByExampleNew" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from USER
+    WHERE ID IN
+    <foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+      #{id}
+    </foreach>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     <!--
