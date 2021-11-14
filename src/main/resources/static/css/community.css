@@ -18,7 +18,7 @@ body{
 }
 
 .media-body{
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 .text-desc{
@@ -50,6 +50,14 @@ body{
     border-bottom: 1px solid #eee;
 }
 
+.sub-comments{
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
 .btn-comment{
     float: right;
     margin-bottom: 10px;
@@ -59,6 +67,8 @@ body{
     margin-top: 0;
 }
 
+
+
 .menu{
     color: #999;
 }
@@ -67,6 +77,10 @@ body{
     margin-right: 6px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.menu .active{
+    color: #499ef3;
 }
 
 .menu .icon:hover{
