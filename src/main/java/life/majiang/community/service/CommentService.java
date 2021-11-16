@@ -83,7 +83,7 @@ public class CommentService {
             questionExtMapper.incCommentCount(question);
 
             //添加回复通知
-            createNorify(comment, question.getCreator(), commentator.getName(),question.getTitle(),NotificationTypeEnum.REPLAY_COMMENT,question.getId());
+            createNorify(comment, question.getCreator(), commentator.getName(),question.getTitle(),NotificationTypeEnum.REPLAY_QUESTION,question.getId());
         }
     }
 
