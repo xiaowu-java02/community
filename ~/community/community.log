@@ -1,0 +1,52 @@
+2021-11-17 20:47:02.018  INFO 12116 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication using Java 1.8.0_91 on DESKTOP-CUSJFEL with PID 12116 (G:\gitRepos\community\target\classes started by 12410 in G:\gitRepos\community)
+2021-11-17 20:47:02.018  INFO 12116 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2021-11-17 20:47:02.285  INFO 12116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2021-11-17 20:47:02.286  INFO 12116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-17 20:47:02.286  INFO 12116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 20:47:02.307  INFO 12116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-17 20:47:02.308  INFO 12116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 287 ms
+2021-11-17 20:47:02.319  INFO 12116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-11-17 20:47:02.325  INFO 12116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-11-17 20:47:02.325  INFO 12116 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2021-11-17 20:47:02.475  INFO 12116 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-11-17 20:47:02.513  INFO 12116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-17 20:47:02.522  INFO 12116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2021-11-17 20:47:02.526  INFO 12116 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 0.547 seconds (JVM running for 4441.147)
+2021-11-17 20:47:02.528  INFO 12116 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-17 20:52:19.791  INFO 12116 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-11-17 20:52:19.801  INFO 12116 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-11-17 20:53:08.041  INFO 12116 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication using Java 1.8.0_91 on DESKTOP-CUSJFEL with PID 12116 (G:\gitRepos\community\target\classes started by 12410 in G:\gitRepos\community)
+2021-11-17 20:53:08.042  INFO 12116 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2021-11-17 20:53:08.239  INFO 12116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2021-11-17 20:53:08.240  INFO 12116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-17 20:53:08.240  INFO 12116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 20:53:08.252  INFO 12116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-17 20:53:08.252  INFO 12116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2021-11-17 20:53:08.261  INFO 12116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-11-17 20:53:08.266  INFO 12116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-11-17 20:53:08.266  INFO 12116 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2021-11-17 20:53:08.370  INFO 12116 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-11-17 20:53:08.401  INFO 12116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-17 20:53:08.408  INFO 12116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2021-11-17 20:53:08.411  INFO 12116 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 0.389 seconds (JVM running for 4807.031)
+2021-11-17 20:53:08.412  INFO 12116 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-17 20:53:46.629  INFO 12116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-11-17 20:53:46.631  INFO 12116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-11-17 20:53:48.450  INFO 20124 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication using Java 1.8.0_91 on DESKTOP-CUSJFEL with PID 20124 (G:\gitRepos\community\target\classes started by 12410 in G:\gitRepos\community)
+2021-11-17 20:53:48.451  INFO 20124 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2021-11-17 20:53:48.482  INFO 20124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-17 20:53:48.482  INFO 20124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-17 20:53:49.199  INFO 20124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2021-11-17 20:53:49.205  INFO 20124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-17 20:53:49.205  INFO 20124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 20:53:49.252  INFO 20124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-17 20:53:49.253  INFO 20124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2021-11-17 20:53:49.271  INFO 20124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-17 20:53:49.353  INFO 20124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-17 20:53:49.356  INFO 20124 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2021-11-17 20:53:49.750  INFO 20124 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-11-17 20:53:49.868  INFO 20124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-17 20:53:49.892  INFO 20124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2021-11-17 20:53:49.900  INFO 20124 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 1.715 seconds (JVM running for 2.467)
+2021-11-17 20:56:07.847  INFO 20124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-17 20:56:07.848  INFO 20124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
