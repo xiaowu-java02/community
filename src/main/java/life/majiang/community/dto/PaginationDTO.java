@@ -2,7 +2,6 @@ package life.majiang.community.dto;
 
 import lombok.Data;
 
-import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
