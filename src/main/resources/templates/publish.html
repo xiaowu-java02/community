@@ -34,6 +34,7 @@
                               class="form-control"
                               cols="30" rows="10" autocomplete="off"></textarea>
                 </div>
+                <!--markdown-->
                 <script type="text/javascript">
                     $(function () {
                         var editor = editormd("question-editor", {
@@ -49,6 +50,7 @@
                         });
                     });
                 </script>
+                <!--标签栏-->
                 <div class="form-group">
                     <label for="tag">添加标签</label>
                     <input type="text" class="form-control" th:value="${tag}" id="tag" name="tag"

@@ -56,6 +56,7 @@ public class CommentService {
             if (dbComment == null) {
                 throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
             }
+
             //回复问题
             Question question = questionMapper.selectByPrimaryKey(dbComment.getParentId());
             if (question == null) {
@@ -88,6 +89,7 @@ public class CommentService {
         }
     }
 
+    //通知
     private void createNotify(Comment comment, Long receiver, String notifierName, String outerTitle, NotificationTypeEnum notificationType, Long outerid) {
         if (receiver == comment.getCommentator()){
             return;

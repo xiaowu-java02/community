@@ -1,15 +1,13 @@
 package life.majiang.community.enums;
 
-import life.majiang.community.model.Question;
-
 public enum CommentTypeEnum {
     QUESTION(1),
     COMMENT(2);
     private Integer type;
 
     public static boolean isExist(Integer type) {
-        for(CommentTypeEnum commentTypeEnum : CommentTypeEnum.values()){
-            if (commentTypeEnum.getType() == type){
+        for (CommentTypeEnum commentTypeEnum : CommentTypeEnum.values()) {
+            if (commentTypeEnum.getType() == type) {
                 return true;
             }
         }

@@ -59,8 +59,9 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
-                        <li th:if="${pagination.showFistPage}">
-                            <a href="${'/profile/'+${section}(page=${1})}">
+                        <li th:if="${pagination.showFirstPage}">
+                            <a th:href="@{'/profile/'+${section}(page=${1})}"
+                               aria-label="Previous">
                                 <span aria-hidden="true">&lt;&lt;</span>
                             </a>
                         </li>
@@ -69,11 +70,13 @@
                                 <span aria-hidden="true">&lt;</span>
                             </a>
                         </li>
-                        <li th:each="page : ${pagination.pages}" th:class="${pagination.page == page}?'active':''">
+
+                        <li th:each="page : ${pagination.pages}" th:class="${pagination.page == page}? 'active' : ''">
                             <a th:href="@{'/profile/'+${section}(page=${page})}" th:text="${page}"></a>
                         </li>
+
                         <li th:if="${pagination.showNext}">
-                            <a th:href="@{'/profile/'+${section}(page=${pagination.page + 1})}" aria-label="Previous">
+                            <a th:href="@{'/profile/'+${section}(page=${pagination.page +1})}" aria-label="Previous">
                                 <span aria-hidden="true">&gt;</span>
                             </a>
                         </li>

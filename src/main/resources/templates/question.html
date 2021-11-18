@@ -36,7 +36,7 @@
                     <textarea style="display:none;" th:text="${question.description}"></textarea>
                 </div>
                 <script type="text/javascript">
-                    $(function() {
+                    $(function () {
                         editormd.markdownToHTML("question-view", {});
                     });
                 </script>
@@ -78,12 +78,14 @@
                             </h5>
                             <div th:text="${comment.content}"></div>
                             <div class="menu">
+                                <!--点赞-->
                                 <span class="glyphicon glyphicon-thumbs-up icon"></span>
-                                <span th:data-id="${comment.id}"
-                                      onclick="collapseComments(this)" class="comment-icon">
+                                <!--展开评论按钮-->
+                                <span th:data-id="${comment.id}" onclick="collapseComments(this)" class="comment-icon">
                                     <span class="glyphicon glyphicon-comment"></span>
                                     <span th:text="${comment.commentCount}"></span>
                                 </span>
+                                <!--日期-->
                                 <span class="pull-right"
                                       th:text="${#dates.format(comment.gmtCreate,'yyyy-MM-dd')}"></span>
                             </div>
@@ -112,7 +114,8 @@
                     <div class="media">
                         <div class="media-left">
                             <a href="#">
-                                <img class="media-object img-rounded" th:src="${session.user != null ? session.user.avatarUrl : '/images/profile_picture.png'}">
+                                <img class="media-object img-rounded"
+                                     th:src="${session.user != null ? session.user.avatarUrl : '/images/profile_picture.png'}">
                             </a>
                         </div>
                         <div class="media-body">
